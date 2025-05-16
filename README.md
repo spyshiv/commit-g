@@ -19,6 +19,7 @@
 ```bash
 npm install -g commit-g
 ```
+
 or for local project use:
 
 ```bash
@@ -26,6 +27,7 @@ npm install --save-dev commit-g
 ```
 
 ## Usage 🛠️
+
 1.  Stage your changes:
 
 ```bash
@@ -40,14 +42,13 @@ commitg
 
 3.  Follow the interactive prompts to:
 
-    -   ✅ Accept the suggested message
+    - ✅ Accept the suggested message
 
-    -   ✏️ Edit the message
+    - ✏️ Edit the message
 
-    -   🔄 Regenerate a new suggestion
+    - 🔄 Regenerate a new suggestion
 
-    -   ❌ Cancel the commit
-
+    - ❌ Cancel the commit
 
 ## Configuration ⚙️
 
@@ -80,20 +81,20 @@ commitg --api-key your_key --model gemini-pro --emoji
 
 ## Advanced Options 🔧
 
-| Option | Description | Default |
-| --- | --- | --- |
-| `--api-key` | Gemini API key | From env/config |
-| `--model` | Gemini model to use | "gemini-1.5-flash" |
-| `--emoji` | Enable/disable emoji in commits | true |
+| Option      | Description                     | Default            |
+| ----------- | ------------------------------- | ------------------ |
+| `--api-key` | Gemini API key                  | From env/config    |
+| `--model`   | Gemini model to use             | "gemini-1.5-flash" |
+| `--emoji`   | Enable/disable emoji in commits | false              |
 
 ## Programmatic Usage 🤖
 
 ```javascript
-import { generateCommitMessage } from 'commit-g';
+import { generateCommitMessage } from "commit-g";
 
 const message = await generateCommitMessage({
-  apiKey: 'your_key',
-  diff: 'git diff output' // optional
+  apiKey: "your_key",
+  diff: "git diff output" // optional
 });
 
 console.log(message);
@@ -111,11 +112,13 @@ A: Yes, the diff is sent to Gemini's API to generate the message
 A: Yes! Set the `GEMINI_API_KEY` environment variable in your CI
 
 ## Contributing 🤝
+
 PRs are welcome!
 
-
 ## License 📄
+
 MIT © [Shiv Baran Singh](https://github.com/spyshiv)
 
 ---
+
 Stop wasting time on commit messages - Let **Commit-G** do the heavy lifting!

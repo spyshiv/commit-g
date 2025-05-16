@@ -1,11 +1,11 @@
 {
-  "name": "ai-commit",
+  "name": "commit-g",
   "version": "0.0.1",
   "description": "AI-powered Git commit message generator using Gemini",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "aicommit": "./bin/cli.js"
+    "commitg": "./bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

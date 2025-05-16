@@ -5,7 +5,7 @@ Generate meaningful Git commit messages using Google's Gemini AI.
 ## Installation
 
 ```bash
-npm install -g ai-commit
+npm install -g commit-ai
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install -g ai-commit
 ### CLI
 
 ```bash
-aicommit
+commitg
 ```
 
 ### Configuration
@@ -27,7 +27,7 @@ You can configure the package in multiple ways:
    export GEMINI_MODEL='gemini-1.5-flash'
    ```
 
-2. **Configuration file** (`.aicommitrc.js` in your project):
+2. **Configuration file** (`.commitgrc.js` in your project):
 
    ```javascript
    module.exports = {
@@ -39,7 +39,7 @@ You can configure the package in multiple ways:
 
 3. **Command-line arguments**:
    ```bash
-   aicommit --api-key your-key --model gemini-1.5-pro
+   commitg --api-key your-key --model gemini-1.5-pro
    ```
 
 ## How It Works

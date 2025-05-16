@@ -1,0 +1,38 @@
+{
+  "name": "ai-commit",
+  "version": "0.0.1",
+  "description": "AI-powered Git commit message generator using Gemini",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "aicommit": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/cli.js"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "ai",
+    "gemini",
+    "productivity"
+  ],
+  "author": "Shiv Baran Singh <spyshiv@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "prompts": "^2.4.2",
+    "wrap-ansi": "^8.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "index.js"
+  ]
+}

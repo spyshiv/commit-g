@@ -1,57 +1,121 @@
-# AI Commit Message Generator
+# Commit-G 🤖✨
 
-Generate meaningful Git commit messages using Google's Gemini AI.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://badge.fury.io/js/commit-g.svg)](https://www.npmjs.com/package/commit-g)
 
-## Installation
+**AI-powered Git commit messages using Google's Gemini** - Never write a boring commit message again!
+
+## Features 🌟
+
+- ✨ **Smart Commit Messages**: Generates meaningful commit messages using Gemini AI
+- 🚀 **Conventional Commits**: Follows standard commit conventions
+- 🔍 **Context-Aware**: Analyzes your actual code changes
+- 💡 **Interactive UI**: Choose, edit, or regenerate messages
+- ⚡ **Fast**: Gets you committing in seconds
+- 🔧 **Configurable**: Tailor to your project's needs
+
+## Installation 📦
 
 ```bash
-npm install -g commit-ai
+npm install -g commit-g
+```
+or for local project use:
+
+```bash
+npm install --save-dev commit-g
 ```
 
-## Usage
+## Usage 🛠️
+1.  Stage your changes:
 
-### CLI
+```bash
+git add .
+```
+
+2.  Run Commit-G:
 
 ```bash
 commitg
 ```
 
-### Configuration
+3.  Follow the interactive prompts to:
 
-You can configure the package in multiple ways:
+    -   ✅ Accept the suggested message
 
-1. **Environment variables**:
+    -   ✏️ Edit the message
 
-   ```bash
-   export GEMINI_API_KEY='your-api-key'
-   export GEMINI_MODEL='gemini-1.5-flash'
-   ```
+    -   🔄 Regenerate a new suggestion
 
-2. **Configuration file** (`.commitgrc.js` in your project):
+    -   ❌ Cancel the commit
 
-   ```javascript
-   module.exports = {
-     apiKey: "your-api-key",
-     model: "gemini-1.5-flash",
-     maxDiffLength: 15000
-   };
-   ```
 
-3. **Command-line arguments**:
-   ```bash
-   commitg --api-key your-key --model gemini-1.5-pro
-   ```
+## Configuration ⚙️
 
-## How It Works
+Commit-G can be configured via:
 
-1. Stages your Git changes (`git diff --cached`)
-2. Sends the diff to Gemini AI
-3. Generates a conventional commit message
-4. Lets you edit/accept/regenerate the message
-5. Creates the commit
+1.  **Environment variables**:
 
-## Requirements
+```bash
+export GEMINI_API_KEY="your_api_key_here"
+export COMMITG_MODEL="gemini-1.5-flash"
+```
 
-- Node.js 16+
-- Git repository
-- Google Gemini API key
+2.  **Configuration file** (`.commitgrc.json` in your project root):
+
+```json
+{
+  "apiKey": "your_api_key_here",
+  "model": "gemini-1.5-flash",
+  "maxLength": 72,
+  "maxDiffLength": 10000,
+  "emoji": true
+}
+```
+
+3.  **Command-line arguments**:
+
+```bash
+commitg --api-key your_key --model gemini-pro --emoji
+```
+
+## Advanced Options 🔧
+
+| Option | Description | Default |
+| --- | --- | --- |
+| `--api-key` | Gemini API key | From env/config |
+| `--model` | Gemini model to use | "gemini-1.5-flash" |
+| `--emoji` | Enable/disable emoji in commits | true |
+
+## Programmatic Usage 🤖
+
+```javascript
+import { generateCommitMessage } from 'commit-g';
+
+const message = await generateCommitMessage({
+  apiKey: 'your_key',
+  diff: 'git diff output' // optional
+});
+
+console.log(message);
+```
+
+## FAQ ❓
+
+**Q: How do I get a Gemini API key?**
+A: Get it from [Google AI Studio](https://aistudio.google.com/)
+
+**Q: Is my code sent to Google's servers?**
+A: Yes, the diff is sent to Gemini's API to generate the message
+
+**Q: Can I use this in CI/CD pipelines?**
+A: Yes! Set the `GEMINI_API_KEY` environment variable in your CI
+
+## Contributing 🤝
+PRs are welcome!
+
+
+## License 📄
+MIT © [Shiv Baran Singh](https://github.com/spyshiv)
+
+---
+Stop wasting time on commit messages - Let **Commit-G** do the heavy lifting!

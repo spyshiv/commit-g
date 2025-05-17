@@ -12,12 +12,6 @@ export async function main(argv = {}) {
       ...(await loadConfig())
     };
 
-    // Debug log to verify emoji flag is received
-    console.log(chalk.gray(`⚙️  Configuration:`), {
-      emoji: config.emoji,
-      apiKey: config.apiKey ? "***" : "not set"
-    });
-
     const generator = new CommitGenerator(config);
     await generator.run();
   } catch (error) {

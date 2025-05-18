@@ -6,6 +6,8 @@
 📘 **[See Docs](https://spyshiv.github.io/commit-g/)** | 📦 **[NPM Package](https://www.npmjs.com/package/commit-g)**
 
 **AI-powered Git commit messages using Google’s Gemini** – Never write a boring commit message again!
+[![Watch the video](https://img.youtube.com/vi/eqUG0y1OedA/0.jpg)](https://www.youtube.com/watch?v=eqUG0y1OedA)
+
 
 ---
 

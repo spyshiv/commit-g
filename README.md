@@ -1,26 +1,26 @@
-# Commit-G 🤖✨
+**# Commit-G 🤖✨**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://badge.fury.io/js/commit-g.svg)](https://www.npmjs.com/package/commit-g)
+[![License: MIT](__https://img.shields.io/badge/License-MIT-blue.svg__)](__https://opensource.org/licenses/MIT__)
+[![npm version](__https://badge.fury.io/js/commit-g.svg__)](__https://www.npmjs.com/package/commit-g__)
 
-**AI-powered Git commit messages using Google’s Gemini** – Never write a boring commit message again!
-
----
-
-## Features 🌟
-
-- ✨ **Smart Commit Messages** – Generates meaningful messages with Gemini AI
-- 🚀 **Conventional Commits** – Follows widely accepted commit message conventions
-- 🔍 **Context-Aware** – Analyzes actual code changes to craft relevant messages
-- 💡 **Interactive UI** – Choose, edit, or regenerate commit messages seamlessly
-- ⚡ **Fast & Efficient** – Commit in seconds with minimal effort
-- 🔧 **Highly Configurable** – Adaptable to your project’s workflow
-- 🏷️ **Prefix Support** – Automatically prepend JIRA IDs or custom tags
-- 🎉 **Emoji Support** – Add expressive emojis to your commit messages
+\***\*AI-powered Git commit messages using Google’s Gemini\*\*** – Never write a boring commit message again!
 
 ---
 
-## Installation 📦
+**## Features 🌟**
+
+- ✨ \***\*Smart Commit Messages\*\*** – Generates meaningful messages with Gemini AI
+- 🚀 \***\*Conventional Commits\*\*** – Follows widely accepted commit message conventions
+- 🔍 \***\*Context-Aware\*\*** – Analyzes actual code changes to craft relevant messages
+- 💡 \***\*Interactive UI\*\*** – Choose, edit, or regenerate commit messages seamlessly
+- ⚡ \***\*Fast & Efficient\*\*** – Commit in seconds with minimal effort
+- 🔧 \***\*Highly Configurable\*\*** – Adaptable to your project’s workflow
+- 🏷️ \***\*Prefix Support\*\*** – Automatically prepend JIRA IDs or custom tags
+- 🎉 \***\*Emoji Support\*\*** – Add expressive emojis to your commit messages
+
+---
+
+**## Installation 📦**
 
 Install globally:
 
@@ -36,7 +36,7 @@ npm install --save-dev commit-g
 
 ---
 
-## Usage 🛠️
+**## Usage 🛠️**
 
 1. Stage your changes:
 
@@ -59,18 +59,18 @@ commitg
 
 ---
 
-## Configuration ⚙️
+**## Configuration ⚙️**
 
 Commit-G supports flexible configuration methods:
 
-### 1. Environment Variables
+**### 1. Environment Variables**
 
 ```bash
 export GEMINI_API_KEY="your_api_key_here"
-export COMMITG_MODEL="gemini-1.5-flash"
+export GEMINI_MODEL="gemini-1.5-flash"
 ```
 
-### 2. Configuration File
+**### 2. Configuration File**
 
 Create a `.commitgrc.json` in your project root:
 
@@ -83,7 +83,7 @@ Create a `.commitgrc.json` in your project root:
 }
 ```
 
-### 3. Command-Line Arguments
+**### 3. Command-Line Arguments**
 
 ```bash
 commitg --api-key your_key --model gemini-1.5-flash --emoji --prefix JIRA-123
@@ -91,7 +91,7 @@ commitg --api-key your_key --model gemini-1.5-flash --emoji --prefix JIRA-123
 
 ---
 
-## Advanced Options 🔧
+**## Advanced Options 🔧**
 
 | Option              | Description                       | Default            |
 | ------------------- | --------------------------------- | ------------------ |
@@ -103,19 +103,23 @@ commitg --api-key your_key --model gemini-1.5-flash --emoji --prefix JIRA-123
 
 ---
 
-## FAQ ❓
+**## FAQ ❓**
 
-**Q: How do I obtain a Gemini API key?**
-**A:** You can generate a key from [Google AI Studio](https://aistudio.google.com/). Sign in with your Google account and navigate to the API key section.
+\***\*Q: How do I obtain a Gemini API key?\*\***
 
-**Q: Is my code sent to Google?**
-**A:** Yes, the staged code diff is securely sent to the Gemini API to generate commit messages. Make sure this complies with your organization’s privacy policies.
+\***\*A:\*\*** You can generate a key from [Google AI Studio](__https://aistudio.google.com/__). Sign in with your Google account and navigate to the API key section.
 
-**Q: Can I use Commit-G in CI/CD pipelines?**
-**A:** Absolutely! You can set the `GEMINI_API_KEY` as an environment variable in your CI/CD pipeline configuration. Optionally, configure other parameters using environment variables or CLI flags.
+\***\*Q: Is my code sent to Google?\*\***
 
-**Q: How do I add a JIRA ID or custom prefix to the commit message?**
-**A:** Use the `--prefix` option in the CLI, or configure it in `.commitgrc.json`.
+\***\*A:\*\*** Yes, the staged code diff is securely sent to the Gemini API to generate commit messages. Make sure this complies with your organization’s privacy policies.
+
+\***\*Q: Can I use Commit-G in CI/CD pipelines?\*\***
+
+\***\*A:\*\*** Absolutely! You can set the `GEMINI_API_KEY` as an environment variable in your CI/CD pipeline configuration. Optionally, configure other parameters using environment variables or CLI flags.
+
+\***\*Q: How do I add a JIRA ID or custom prefix to the commit message?\*\***
+
+\***\*A:\*\*** Use the `--prefix` option in the CLI, or configure it in `.commitgrc.json`.
 Example CLI usage:
 
 ```bash
@@ -130,8 +134,9 @@ Example in `.commitgrc.json`:
 }
 ```
 
-**Q: How do I enable or disable emoji in commit messages?**
-**A:** Use the `--emoji` flag to enable, or omit it to disable.
+\***\*Q: How do I enable or disable emoji in commit messages?\*\***
+
+\***\*A:\*\*** Use the `--emoji` flag to enable, or omit it to disable.
 Example CLI usage:
 
 ```bash
@@ -146,24 +151,26 @@ Or in `.commitgrc.json`:
 }
 ```
 
-**Q: Does it work with monorepos or large diffs?**
-**A:** Yes. To manage performance, use the `--max-diff-length` option or configure it in `.commitgrc.json`.
+\***\*Q: Does it work with monorepos or large diffs?\*\***
 
-**Q: What if I want to use a different Gemini model?**
-**A:** You can specify the desired model via the `--model` flag or in your config file.
+\***\*A:\*\*** Yes. To manage performance, use the `--max-diff-length` option or configure it in `.commitgrc.json`.
 
----
+\***\*Q: What if I want to use a different Gemini model?\*\***
 
-## Contributing 🤝
-
-Pull requests are welcome! If you have ideas, feature requests, or improvements, feel free to open an [issue](https://github.com/spyshiv/commit-g/issues/new) or submit a [Pull Request](https://github.com/spyshiv/commit-g/pulls).
+\***\*A:\*\*** You can specify the desired model via the `--model` flag or in your config file.
 
 ---
 
-## License 📄
+**## Contributing 🤝**
 
-MIT License © [Shiv Baran Singh](https://github.com/spyshiv)
+Pull requests are welcome! If you have ideas, feature requests, or improvements, feel free to open an [issue](__https://github.com/spyshiv/commit-g/issues/new__) or submit a [Pull Request](__https://github.com/spyshiv/commit-g/pulls__).
 
 ---
 
-### 🚀 Stop wasting time on commit messages. Let **Commit-G** do the heavy lifting for you!
+**## License 📄**
+
+MIT License © [Shiv Baran Singh](__https://github.com/spyshiv__)
+
+---
+
+**### 🚀 Stop wasting time on commit messages. Let **Commit-G** do the heavy lifting for you!**

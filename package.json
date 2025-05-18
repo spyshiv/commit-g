@@ -1,7 +1,7 @@
 {
   "name": "commit-g",
   "version": "0.0.4",
-  "description": "AI-powered Git commit message generator using Gemini",
+  "description": "Generate concise, meaningful Git commit messages with AI assistance powered by Gemini.",
   "main": "index.js",
   "type": "module",
   "bin": {
@@ -16,10 +16,15 @@
     "commit",
     "ai",
     "gemini",
-    "productivity"
+    "google-ai",
+    "llm",
+    "commit-message",
+    "devtools",
+    "productivity",
+    "automation",
+    "cli",
+    "git-helper"
   ],
-  "author": "Shiv Baran Singh <spyshiv@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "boxen": "^7.1.1",
@@ -35,5 +40,15 @@
     "bin/",
     "lib/",
     "index.js"
-  ]
+  ],
+  "author": "Shiv Baran Singh <spyshiv@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spyshiv/commit-g.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spyshiv/commit-g/issues"
+  },
+  "homepage": "https://github.com/spyshiv/commit-g#readme"
 }

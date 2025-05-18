@@ -1,6 +1,6 @@
 {
   "name": "commit-g",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Generate concise, meaningful Git commit messages with AI assistance powered by Gemini.",
   "main": "index.js",
   "type": "module",

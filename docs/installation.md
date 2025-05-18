@@ -13,3 +13,7 @@ npm install -g commit-g
 ```bash
 npm install --save-dev commit-g
 ```
+
+---
+
+👉 [Configuration Options](configuration.md)

@@ -4,7 +4,10 @@
 
 > No more boring or vague commit messages — Commit-G saves time and improves clarity in your Git history.
 
-👉 [Installation Guide](installation.md)  
-👉 [Usage Instructions](usage.md)  
-👉 [Configuration Options](configuration.md)  
+👉 [Installation Guide](installation.md)
+
+👉 [Configuration Options](configuration.md)
+
+👉 [Usage Instructions](usage.md)
+
 👉 [FAQ](faq.md)

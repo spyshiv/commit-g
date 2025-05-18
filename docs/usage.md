@@ -23,3 +23,7 @@ commitg
 - ❌ Cancel
 
 Commit-G makes it interactive and easy to maintain a clean commit history.
+
+---
+
+👉 [FAQ](faq.md)

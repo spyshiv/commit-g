@@ -23,3 +23,7 @@ Use the `--emoji` flag or set `"emoji": true` in `.commitgrc.json`.
 ### Can I change the Gemini model?
 
 Yes. Use the `--model` flag or update your config file.
+
+---
+
+👉 [Home](index.md)

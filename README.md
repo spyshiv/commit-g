@@ -3,6 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://badge.fury.io/js/commit-g.svg)](https://www.npmjs.com/package/commit-g)
 
+📘 **[See Docs](https://spyshiv.github.io/commit-g/)** | 📦 **[NPM Package](https://www.npmjs.com/package/commit-g)**
+
 **AI-powered Git commit messages using Google’s Gemini** – Never write a boring commit message again!
 
 ---

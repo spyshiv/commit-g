@@ -6,8 +6,8 @@
 📘 **[See Docs](https://spyshiv.github.io/commit-g/)** | 📦 **[NPM Package](https://www.npmjs.com/package/commit-g)**
 
 **AI-powered Git commit messages using Google’s Gemini** – Never write a boring commit message again!
-[![Watch the video](https://img.youtube.com/vi/eqUG0y1OedA/0.jpg)](https://www.youtube.com/watch?v=eqUG0y1OedA)
 
+[![Watch the video](https://img.youtube.com/vi/eqUG0y1OedA/0.jpg)](https://www.youtube.com/watch?v=eqUG0y1OedA)
 
 ---
 
@@ -111,7 +111,7 @@ commitg --api-key your_key --model gemini-1.5-flash --emoji --prefix JIRA-123
 
 **Q: How do I obtain a Gemini API key?**
 
-**A:** You can generate a key from [Google AI Studio](https://aistudio.google.com/apikey). Sign in with your Google account and navigate to the API key section.
+**A:** You can generate a key from [Google AI Studio](https://aistudio.google.com/apikey).
 
 **Q: Is my code sent to Google?**
 

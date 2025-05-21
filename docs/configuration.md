@@ -24,7 +24,7 @@ export COMMITG_MODEL="gemini-1.5-flash"
 ## 3. Command-Line Flags
 
 ```bash
-commitg --api-key your_key --model gemini-pro --emoji --prefix JIRA-123
+commitg --apiKey your_key --model gemini-pro --emoji --prefix JIRA-123
 ```
 
 ---

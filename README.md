@@ -90,20 +90,21 @@ Create a `.commitgrc.json` in your project root:
 ### 3. Command-Line Arguments
 
 ```bash
-commitg --api-key your_key --model gemini-1.5-flash --emoji --prefix JIRA-123
+commitg --apiKey your_key --model gemini-1.5-flash --emoji --prefix JIRA-123
 ```
 
 ---
 
 ## Advanced Options 🔧
 
-| Option              | Description                       | Default            |
-| ------------------- | --------------------------------- | ------------------ |
-| `--api-key`         | Gemini API key                    | From env/config    |
-| `--model`           | Gemini model to use               | `gemini-1.5-flash` |
-| `--emoji`           | Enable or disable emojis          | `false`            |
-| `--prefix`          | Add a prefix (e.g., `JIRA-123`)   | `false`            |
-| `--max-diff-length` | Max length of git diff to analyze | `10000`            |
+| Option            | Description                                 | Default                |
+| ----------------- | ------------------------------------------- | ---------------------- |
+| `--apiKey`        | Gemini API key                              | `undefined` (must set) |
+| `--emoji`         | Enable or disable emojis                    | `false`                |
+| `--maxDiffLength` | Max length of git diff to analyze           | `10000`                |
+| `--maxRetries`    | Number of times to retry on API failure     | `2`                    |
+| `--model`         | Gemini model to use                         | `gemini-1.5-flash`     |
+| `--prefix`        | Add a prefix (e.g., `JIRA-123`)             | `undefined`            |
 
 ---
 
@@ -158,7 +159,7 @@ Or in `.commitgrc.json`:
 
 **Q: Does it work with monorepos or large diffs?**
 
-**A:** Yes. To manage performance, use the `--max-diff-length` option or configure it in `.commitgrc.json`.
+**A:** Yes. To manage performance, use the `--maxDiffLength` option or configure it in `.commitgrc.json`.
 
 **Q: What if I want to use a different Gemini model?**
 

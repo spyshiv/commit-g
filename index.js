@@ -4,7 +4,7 @@ import chalk from "chalk";
 
 export async function main(argv = {}) {
   try {
-    console.log(chalk.blue("\n🚀 Starting AI Commit Generator..."));
+    console.log(chalk.blue("\n🤖 AI Commit Message Generator\n"));
 
     const config = await loadConfig(argv);
 

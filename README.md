@@ -56,10 +56,10 @@ commitg
 
 3. Follow the interactive prompts to:
 
-- ✅ Accept the suggested message
+- ✅ Commit with this message
 - ✏️ Edit the message
-- 🔄 Regenerate a new suggestion
-- ❌ Cancel the commit
+- 🔄 Regenerate the message
+- ❌ Cancel
 
 ---
 

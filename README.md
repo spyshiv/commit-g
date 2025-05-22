@@ -97,14 +97,14 @@ commitg --apiKey your_key --model gemini-1.5-flash --emoji --prefix JIRA-123
 
 ## Advanced Options 🔧
 
-| Option            | Description                                 | Default                |
-| ----------------- | ------------------------------------------- | ---------------------- |
-| `--apiKey`        | Gemini API key                              | `undefined` (must set) |
-| `--emoji`         | Enable or disable emojis                    | `false`                |
-| `--maxDiffLength` | Max length of git diff to analyze           | `10000`                |
-| `--maxRetries`    | Number of times to retry on API failure     | `2`                    |
-| `--model`         | Gemini model to use                         | `gemini-1.5-flash`     |
-| `--prefix`        | Add a prefix (e.g., `JIRA-123`)             | `undefined`            |
+| Option            | Description                             | Default                |
+| ----------------- | --------------------------------------- | ---------------------- |
+| `--apiKey`        | Gemini API key                          | `undefined` (must set) |
+| `--emoji`         | Enable or disable emojis                | `false`                |
+| `--maxDiffLength` | Max length of git diff to analyze       | `10000`                |
+| `--maxRetries`    | Number of times to retry on API failure | `2`                    |
+| `--model`         | Gemini model to use                     | `gemini-1.5-flash`     |
+| `--prefix`        | Add a prefix (e.g., `JIRA-123`)         | `undefined`            |
 
 ---
 

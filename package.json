@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node bin/cli.js",
     "lint": "eslint .",
-    "format": "prettier --write \"**/*.{js}\""
+    "format": "prettier $(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g') --write --ignore-unknown && git update-index --again"
   },
   "keywords": [
     "git",

@@ -14,11 +14,11 @@ commitg
 
 ### Step 3: Follow the Prompts
 
-- ✅ Accept the suggestion
+- ✅ Commit with this message
 
 - ✏️ Edit the message
 
-- 🔄 Regenerate it
+- 🔄 Regenerate the message
 
 - ❌ Cancel
 

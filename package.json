@@ -9,7 +9,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/cli.js"
+    "start": "node bin/cli.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "keywords": [
     "git",
@@ -50,5 +53,34 @@
   "bugs": {
     "url": "https://github.com/spyshiv/commit-g/issues"
   },
-  "homepage": "https://github.com/spyshiv/commit-g#readme"
+  "homepage": "https://github.com/spyshiv/commit-g#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "globals": "^16.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "prettier": "^3.5.3"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": false,
+    "printWidth": 100,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "arrowParens": "always"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.json": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  }
 }

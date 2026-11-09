@@ -1,11 +1,24 @@
 #!/usr/bin/env node
 
+import { createRequire } from "module";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 import chalk from "chalk";
 
+const require = createRequire(import.meta.url);
+const { version } = require("../package.json");
+
+const [major] = process.versions.node.split(".").map(Number);
+if (major < 22) {
+  console.error(
+    chalk.red(`commitg requires Node.js 22 or newer (current: ${process.versions.node}).`)
+  );
+  process.exit(1);
+}
+
 // Parse command line arguments
-const argv = yargs(hideBin(process.argv))
+const argv = await yargs(hideBin(process.argv))
+  .version(version)
   .option("apiKey", {
     type: "string",
     description: "Gemini API key (overrides config)",
@@ -24,13 +37,14 @@ const argv = yargs(hideBin(process.argv))
   })
   .option("model", {
     type: "string",
-    description: "Gemini model to use (e.g., gemini-1.5-flash)",
+    description: "Gemini model to use (e.g., gemini-3.8-flash)",
   })
   .option("prefix", {
     type: "string",
     description: "Add a prefix to the commit message (e.g., JIRA-123)",
   })
-  .help().argv;
+  .help()
+  .parse();
 
 // Use dynamic import for better error handling
 try {

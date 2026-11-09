@@ -6,7 +6,7 @@ You can configure Commit-G in three ways:
 
 ```bash
 export GEMINI_API_KEY="your_key"
-export COMMITG_MODEL="gemini-1.5-flash"
+export GEMINI_MODEL="gemini-3.8-flash"
 ```
 
 ## 2. .commitgrc.json File
@@ -14,7 +14,7 @@ export COMMITG_MODEL="gemini-1.5-flash"
 ```json
 {
   "apiKey": "your_key",
-  "model": "gemini-1.5-flash",
+  "model": "gemini-3.8-flash",
   "maxDiffLength": 10000,
   "emoji": true,
   "prefix": "JIRA-123"

@@ -12,7 +12,7 @@ export async function main(argv = {}) {
     await generator.run();
   } catch (error) {
     console.error(chalk.red("\n💥 Error:"), error.message);
-    if (error.stack) {
+    if (process.env.DEBUG && error.stack) {
       console.error(chalk.gray(error.stack));
     }
     process.exit(1);

@@ -1,5 +1,7 @@
 # Installation 📦
 
+Commit-G requires Node.js 22 or newer.
+
 You can install Commit-G globally or as a dev dependency.
 
 ### Global Installation

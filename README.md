@@ -71,7 +71,7 @@ Commit-G supports flexible configuration methods:
 
 ```bash
 export GEMINI_API_KEY="your_api_key_here"
-export GEMINI_MODEL="gemini-1.5-flash"
+export GEMINI_MODEL="gemini-3.8-flash"
 ```
 
 ### 2. Configuration File
@@ -81,7 +81,7 @@ Create a `.commitgrc.json` in your project root:
 ```json
 {
   "apiKey": "your_api_key_here",
-  "model": "gemini-1.5-flash",
+  "model": "gemini-3.8-flash",
   "maxDiffLength": 10000,
   "emoji": true
 }
@@ -90,7 +90,7 @@ Create a `.commitgrc.json` in your project root:
 ### 3. Command-Line Arguments
 
 ```bash
-commitg --apiKey your_key --model gemini-1.5-flash --emoji --prefix JIRA-123
+commitg --apiKey your_key --model gemini-3.8-flash --emoji --prefix JIRA-123
 ```
 
 ---
@@ -103,7 +103,7 @@ commitg --apiKey your_key --model gemini-1.5-flash --emoji --prefix JIRA-123
 | `--emoji`         | Enable or disable emojis                | `false`                |
 | `--maxDiffLength` | Max length of git diff to analyze       | `10000`                |
 | `--maxRetries`    | Number of times to retry on API failure | `2`                    |
-| `--model`         | Gemini model to use                     | `gemini-1.5-flash`     |
+| `--model`         | Gemini model to use                     | `gemini-3.8-flash`     |
 | `--prefix`        | Add a prefix (e.g., `JIRA-123`)         | `undefined`            |
 
 ---

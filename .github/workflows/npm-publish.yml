@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
   build:
@@ -40,9 +41,8 @@ jobs:
             sed -i '/_authToken/d' "$npmrc"
           fi
           # setup-node writes a placeholder token that blocks the OIDC exchange.
-          unset NODE_AUTH_TOKEN
           if [ -z "$ACTIONS_ID_TOKEN_REQUEST_URL" ]; then
             echo "GitHub did not provide an OIDC token request URL."
             exit 1
           fi
-          npm publish
+          env -u NODE_AUTH_TOKEN npm publish --loglevel verbose
